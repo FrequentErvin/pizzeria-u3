@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Dancing Script', cursive;        }
+        .navbar{
+            display: flex;
+            background-color:rgb(238, 151, 37);
+            color: white;
+            justify-content: space-around;
+            align-items: center;
+            height: 10vh;
+            background-image: linear-gradient(90deg, red, yellow);
+        }
+        .navbar div:nth-child(2){
+            font-weight: 700;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            gap: 20px;
+        }
+        .container{
+            height: 90vh;
+            background-image: url(pizza.jpg);
+            background-size: cover;
+            background-repeat:no-repeat;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+        }
+    </style>
+    <div id="content">
+        <header class="navbar">
+            <h1>Pizzeria U3</h1>
+            <div>
+                <div>About</div>
+                <div>Contact</div>
+                <div>Menu</div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="images">
+                <!--     <img src="pizza.jpg">  -->      
+                </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
