@@ -1,1 +1,1 @@
-console.log("Hello world!");
+(()=>{console.log("Hello world!"),document.getElementById("content");const o=document.querySelector("info-text");console.log(o)})();

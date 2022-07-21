@@ -14,48 +14,110 @@
         *{
             margin: 0;
             padding: 0;
-            font-family: 'Dancing Script', cursive;        }
+            font-family: 'Dancing Script', cursive;
+            color: white;
+            --grey: #c5c5c5;
+            
+        }
         .navbar{
+            box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
             display: flex;
             background-color:rgb(238, 151, 37);
             color: white;
             justify-content: space-around;
             align-items: center;
             height: 10vh;
-            background-image: linear-gradient(90deg, red, yellow);
+            background-image: linear-gradient(90deg, rgb(7, 1, 1), rgb(71, 4, 4));
         }
         .navbar div:nth-child(2){
             font-weight: 700;
-            font-size: 20px;
+            font-size: 28px;
             cursor: pointer;
             display: flex;
-            gap: 20px;
+            gap: 60px;
         }
         .container{
-            height: 90vh;
-            background-image: url(pizza.jpg);
-            background-size: cover;
+            box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.9);
+            /*background-image: url(pizza.jpg);*/
+            background-size: contain;
             background-repeat:no-repeat;
-            filter: blur(8px);
-            -webkit-filter: blur(8px);
-            -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('pizza.jpg');
+        }
+        .intro-text h1{
+            color: white;
+            font-size: 60px;
+        }
+        .intro-text{
+            display: flex;
+            flex-direction: column;
+        }
+        .text-container{
+            padding: 100px;
+            padding-bottom: 20px;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+        }
+        .text-container hr{
+            max-width: 800px;
+        }
+        hr {
+        height: 3px;
+        margin: 50px 0;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        border: 0;
+        }
+        hr:after {
+        display: block;
+        content: '';
+        height: 30px;
+        background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+        background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        .who-text h2{
+        font-size: 45px;
+        }
+        .text-container p{
+            color: var(--grey);
+            font-size: 24px;
+            padding: 5px 0;
+        }
+        .options{
+            font-size: 28px;
+        }
+        .restaurant{
+            padding: 0px 100px;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
         }
     </style>
     <div id="content">
         <header class="navbar">
-            <h1>Pizzeria U3</h1>
-            <div>
+            <h1>PIZZERIA U3</h1>
+            <div class="options">
                 <div>About</div>
                 <div>Contact</div>
                 <div>Menu</div>
             </div>
         </header>
         <div class="container">
-            <div class="images">
-                <!--     <img src="pizza.jpg">  -->      
+            <div class="text-container">
+                <div class="intro-text">
+                    <h1>The best pizza in Sarajevo..</h1>
+                    <p>Taste the traditional pizza served with love for centuries.</p>
                 </div>
+                <hr>
+                <div class="who-text">
+                    <h2>Who are we?</h2>
+                    <p>We are a restaurant chain that has been running since <strong>1983.</strong> We believe 
+                    that good food is the root of happiness. </p>
+                </div>
+            </div>
+            <div class="restaurant">
+                <img src="pizzeria.jpg">
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
