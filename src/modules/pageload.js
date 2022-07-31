@@ -7,9 +7,12 @@ const createNav = function(){
     const contact = document.createElement("div");
     const menu = document.createElement("div");
     name.textContent = "PIZZERIA U3";
+    name.setAttribute("id", "name");
     about.textContent = "About";
+    about.setAttribute("id", "about");
     contact.textContent = "Contact";
     menu.textContent = "Menu";
+    menu.setAttribute("id", "menu");
     options.classList.add("options");
     navbar.classList.add("navbar");
     navbar.append(name);
@@ -19,7 +22,7 @@ const createNav = function(){
     navbar.append(options);
     return navbar;
 }
- 
+
 function loadPage(){
     const content = document.getElementById("content")
     content.append(createNav())
