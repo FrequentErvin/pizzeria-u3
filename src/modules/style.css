@@ -75,13 +75,12 @@ font-size: 45px;
     font-size: 28px;
 }
 .restaurant{
-    padding: 0px 1000px;
+    padding: 0px 100px;
     width: fit-content;
     display: flex;
     flex-direction: column;
 }
 .active{
-    color:#fff;
-    text-shadow:1px 1px 5px #fff, 1px 1px 5px #ccc;
-    text-align:center;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 3px;
 }
