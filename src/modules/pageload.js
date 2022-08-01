@@ -1,4 +1,3 @@
-import createAbout from "./createAbout.js"
 const createNav = function(){
     const navbar = document.createElement("nav")
     navbar.classList.add("navbar");
@@ -34,6 +33,6 @@ const createNav = function(){
 function loadPage(){
     const content = document.getElementById("content");
     content.append(createNav());
-    content.append(createAbout());
+    
 }
 export default loadPage;

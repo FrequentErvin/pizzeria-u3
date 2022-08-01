@@ -33,4 +33,4 @@ const createAbout = function(){
     imageContainer.append(image);
     return container;
 }  
-export default createAbout; 
+export default createAbout;

@@ -84,3 +84,16 @@ font-size: 45px;
     border-bottom: 3px solid rgb(255, 255, 255);
     padding-bottom: 3px;
 }
+.centered{
+    display: flex;
+    justify-content: center;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
