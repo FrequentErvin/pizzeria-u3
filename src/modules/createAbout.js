@@ -1,5 +1,6 @@
 const createAbout = function(){
     const aboutContainer = document.createElement("div");
+    aboutContainer.classList.add("about-display")
     const textContainer = document.createElement("div");
     textContainer.classList.add("text-container");
     
@@ -7,7 +8,7 @@ const createAbout = function(){
     introText.classList.add("intro-text");
     const heading1 = document.createElement("h1");
     const paragraph1 = document.createElement("p");
-    heading1.textContent = "The best pizza in Sarajevo..";
+    heading1.textContent = "Probably the best pizza in Sarajevo..";
     paragraph1.textContent = "Taste the traditional pizza served with love for centuries";
     
     const seperator = document.createElement("hr");
@@ -24,6 +25,7 @@ const createAbout = function(){
     imageContainer.classList.add("restaurant");
     image.src = "pizzeria.jpg";
 
+    
 
     aboutContainer.append(textContainer, imageContainer);
     textContainer.append(introText, seperator, whoText);

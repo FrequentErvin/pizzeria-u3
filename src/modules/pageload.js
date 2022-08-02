@@ -24,8 +24,8 @@ const createNav = function(){
 
     navbar.append(name);
     options.append(about);
-    options.append(contact);
     options.append(menu);
+    options.append(contact);
     navbar.append(options);
     return navbar;
 }

@@ -1,5 +1,6 @@
 import loadPage from "./modules/pageload.js";
 import './modules/style.css';
+import createFooter from "./modules/createFooter.js";
 import createAbout from "./modules/createAbout.js";
 import createMenu from "./modules/createMenu.js";
 import createContact from "./modules/createContact.js";
@@ -25,6 +26,10 @@ const menu = document.getElementById("menu");
 
 about.classList.toggle("active");
 container.append(createAbout());
+
+
+console.log(createFooter());
+content.append(createFooter());
 
 contact.addEventListener("click", () => {
     handle("contact")
@@ -62,6 +67,13 @@ function handle(x){
             container.replaceChildren(createMenu());
     }
 }
+
+//Footer github link:
+
+document.getElementById("gitLink").addEventListener("click", () =>{
+    window.open("https://github.com/FrequentErvin","_blank").focus();
+})
+
 /*
 document.addEventListener("DOMContentLoaded", function() {
     let mapElement = document.getElementById('map');
