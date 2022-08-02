@@ -11,13 +11,14 @@ body.append(content);
 
 loadPage();
 
-const container = document.querySelector("container");
+const container = document.getElementById("container");
+container.classList.add("container");
 const about = document.getElementById("about");
 const contact = document.getElementById("contact");
 const menu = document.getElementById("menu");
 
 about.classList.toggle("active");
-content.append(createAbout());
+container.append(createAbout());
 
 contact.addEventListener("click", () => {
     handle("contact")
@@ -41,14 +42,17 @@ function handle(x){
     if(x === "about" && !about.classList.contains("active")){
             about.classList.toggle("active");
             clearActive(about);
-            content.replaceChildren();
+            console.log(createAbout())
+            container.replaceChildren(createAbout());
     }else if(x === "contact" && !contact.classList.contains("active")){
             contact.classList.toggle("active");
             clearActive(contact);
-            container.replaceChildren(createContact());
+            console.log(createContact())
+            //container.replaceChildren(createContact());
     }else if(x === "menu" && !menu.classList.contains("active")){
             menu.classList.toggle("active");
             clearActive(menu);
+            console.log(createMenu())
             container.replaceChildren(createMenu());
     }
 }

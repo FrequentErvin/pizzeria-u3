@@ -91,9 +91,21 @@ font-size: 45px;
 .menu-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+
 }
 .card{
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    padding: 100px;
+}
+.pizza-image{
+    height: auto;
+    width: 300px;
 }

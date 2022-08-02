@@ -1,6 +1,5 @@
 const createAbout = function(){
-    const container = document.createElement("div");
-    container.classList.add("container");
+    const aboutContainer = document.createElement("div");
     const textContainer = document.createElement("div");
     textContainer.classList.add("text-container");
     
@@ -26,11 +25,11 @@ const createAbout = function(){
     image.src = "pizzeria.jpg";
 
 
-    container.append(textContainer, imageContainer);
+    aboutContainer.append(textContainer, imageContainer);
     textContainer.append(introText, seperator, whoText);
     introText.append(heading1, paragraph1);
     whoText.append(heading2,paragraph2);
     imageContainer.append(image);
-    return container;
+    return aboutContainer;
 }  
 export default createAbout;

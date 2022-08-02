@@ -32,7 +32,9 @@ const createNav = function(){
 
 function loadPage(){
     const content = document.getElementById("content");
+    const container = document.createElement("div");
+    container.setAttribute("id","container");
     content.append(createNav());
-    
+    content.append(container);
 }
 export default loadPage;
