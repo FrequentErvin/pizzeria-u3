@@ -2,7 +2,7 @@ import capriccosa from "../assets/capricciosa.png"
 import margherita from "../assets/margherita.png"
 import mexican from "../assets/mexican.png"
 import pepperoni from "../assets/pepperoni.png"
-import sicilian from "../assets/silician.png"
+import sicilian from "../assets/sicilian.png"
 import veggie from "../assets/veggie.png"
 
 const createMenu = function () {
@@ -43,7 +43,7 @@ const createMenu = function () {
     image3.src = mexican
     image3.classList.add("pizza-image");
     const caption3 = document.createElement("caption");
-    caption3.textContent = "Margharita 3$";
+    caption3.textContent = "Mexican 3$";
     item3.append(image3, caption3);
     item3.classList.add("card");
 
@@ -52,7 +52,7 @@ const createMenu = function () {
     image4.src = pepperoni
     image4.classList.add("pizza-image");
     const caption4 = document.createElement("caption");
-    caption4.textContent = "Margharita 3$";
+    caption4.textContent = "Pepperoni 3$";
     item4.append(image4, caption4);
     item4.classList.add("card");
 
@@ -61,7 +61,7 @@ const createMenu = function () {
     image5.src = sicilian
     image5.classList.add("pizza-image");
     const caption5 = document.createElement("caption");
-    caption5.textContent = "Margharita 3$";
+    caption5.textContent = "Sicilian 3$";
     item5.append(image5, caption5);
     item5.classList.add("card");
 
