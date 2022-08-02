@@ -109,3 +109,38 @@ font-size: 45px;
     height: auto;
     width: 300px;
 }
+caption{
+    font-size: 24px;
+}
+.flexy{
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(80, 79, 79, 0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    border: 1px solid rgba(80, 79, 79, 0.5);
+    padding: 100px;
+    display: flex;
+}
+ul{
+    padding: 10px;
+}
+#map{
+    width: 500px;
+    height: 500px;
+}
+.helper{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-style{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+span{
+    display: flex;
+    gap: 10px;
+}

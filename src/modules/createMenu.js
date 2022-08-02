@@ -25,7 +25,7 @@ const createMenu = function () {
     image1.src = capriccosa;
     image1.classList.add("pizza-image");
     const caption1 = document.createElement("caption");
-    caption1.textContent = "Capricossa 3$";
+    caption1.textContent = "Capricossa 12$";
     item1.append(image1, caption1);
     item1.classList.add("card");
     
@@ -34,7 +34,7 @@ const createMenu = function () {
     image2.src = margherita
     image2.classList.add("pizza-image");
     const caption2 = document.createElement("caption");
-    caption2.textContent = "Margherita 3$";
+    caption2.textContent = "Margherita 8$";
     item2.append(image2, caption2);
     item2.classList.add("card");
 
@@ -43,7 +43,7 @@ const createMenu = function () {
     image3.src = mexican
     image3.classList.add("pizza-image");
     const caption3 = document.createElement("caption");
-    caption3.textContent = "Mexican 3$";
+    caption3.textContent = "Mexican 12$";
     item3.append(image3, caption3);
     item3.classList.add("card");
 
@@ -52,7 +52,7 @@ const createMenu = function () {
     image4.src = pepperoni
     image4.classList.add("pizza-image");
     const caption4 = document.createElement("caption");
-    caption4.textContent = "Pepperoni 3$";
+    caption4.textContent = "Pepperoni 10$";
     item4.append(image4, caption4);
     item4.classList.add("card");
 
@@ -61,7 +61,7 @@ const createMenu = function () {
     image5.src = sicilian
     image5.classList.add("pizza-image");
     const caption5 = document.createElement("caption");
-    caption5.textContent = "Sicilian 3$";
+    caption5.textContent = "Sicilian 12$";
     item5.append(image5, caption5);
     item5.classList.add("card");
 
@@ -70,7 +70,7 @@ const createMenu = function () {
     image6.src = veggie
     image6.classList.add("pizza-image");
     const caption6 = document.createElement("caption");
-    caption6.textContent = "Margharita 3$";
+    caption6.textContent = "Veggie 8$";
     item6.append(image6, caption6);
     item6.classList.add("card");
 
